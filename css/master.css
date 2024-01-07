@@ -1,0 +1,262 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+main {
+    max-width: 1050px;
+    height: 100vh;
+    margin: auto;
+    
+}
+.img {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    position: relative;
+    
+}
+nav>a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.hero {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text {
+    max-width: 610px;
+    padding: 15px;
+}
+.hero-text h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #21243D;
+}
+.hero-text p {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #21243D;
+}
+.resume-btn {
+    padding: 16px 12px;
+    font-size: 1.5em;
+    background-color: #FF6464;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.recent-posts {
+    background-color: #EDF7FA;
+    padding: 15px;
+    display: flex;
+   flex-direction: column;
+    
+}
+.recent-posts-posts {
+    display: flex;
+    align-items: center;
+}
+.recent-posts-main {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 10px;
+}
+.blog-post {
+    background-color: #fff;
+    margin: 10px;
+   max-width: 450px;
+   display: flex;
+   flex-direction: column;
+    padding: 8px;
+   
+}
+.featured-work {
+    padding: 15px;;
+}
+.work-projects {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.project {
+   max-width: 700px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-bottom: 15px;
+   
+    
+}
+.projects-imgs {
+    width: 260px;
+    margin-right: 15px;
+}
+.project > h1 {
+    font-size: 2em;
+    color: #142850;
+}
+.project > p {
+    font-size: 1.3em;
+    line-height: 30px;
+    color: #21243D;
+}
+.social-icons {
+    width: 35px;
+    margin: 20px;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    
+
+}
+.modal-overlay {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+.open-modal {
+    visibility: visible;
+}
+.modal-container {
+   position: relative;
+   background-color: #ffffff;
+   border-radius: 4px;
+   padding: 15px;
+   width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    color:#142850;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.freepik {
+    text-align: center;
+    margin: auto;
+}
+@media only screen and (max-width: 375px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .recent-posts-posts {
+        flex-direction: column;
+    }
+    .work-projects {
+        flex-direction: column;
+        text-align: center;
+    }
+    .projects-imgs {
+        width: 95%;
+       margin: auto;
+    }
+    .social-icons {
+        width: 25px;
+        margin: 15px;
+    }
+    #menu-toggle {
+        display: block;
+       margin-top: 13px;
+     }
+     nav {
+        display: none;
+     }
+     .nav-active {
+        display: flex;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 60%;
+		cursor: pointer;
+		transition: 1s;
+        
+     }
+
+}
+@media only screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .recent-posts-posts {
+        flex-direction: column;
+    }
+    .work-projects {
+        flex-direction: column;
+        text-align: center;
+    }
+    .projects-imgs {
+        width: 95%;
+       margin: auto;
+    }
+   
+     #menu-toggle {
+        display: block;
+        
+     }
+     nav {
+        display: none;
+     }
+     .nav-active {
+        display: flex;
+       
+		position: absolute;
+		top: 5px;
+		left: 0px;
+		width: 60%;
+		
+		cursor: pointer;
+		transition: 1s;
+        
+     }
+    
+}
